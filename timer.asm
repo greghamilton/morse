@@ -19,14 +19,14 @@ start
     std     delay
     ldaa    #126
     staa    16902
-    ldx     #timer_overflow
+    ldx     #timer_ocf
     stx     16903
     cli
     ldaa    #0
     staa    TCSR
     rts
 
-timer_overflow
+timer_ocf
     ldaa    sound
     eora    #$80
     staa    sound
