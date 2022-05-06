@@ -19,7 +19,7 @@ The OCF interrupt occurs when the free running timer value matches the value sto
 This delay can be modified from BASIC.
 
 ```
-EN=8:DH=20013:DL=20014
+EN=8:DH=36397:DL=36398
 POKE DH,8:REM DELAY HIGH BYTE
 POKE DL,0:REM DELAY LOW BYTE
 POKE EN,8:REM START TONE
