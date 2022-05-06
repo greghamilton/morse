@@ -12,7 +12,7 @@ TOCR    equ $0B
 TICR    equ $0D   
 ; set bit 2 of TCSR to enable OCF
 
-    org     $4E00
+    org     $8E00
 
 start
     ldd     #$0800
