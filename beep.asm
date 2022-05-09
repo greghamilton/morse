@@ -12,12 +12,12 @@ P2DATA  equ $03
     org     $8E00
 
 start
-    ldx     #$36
+    ldx     delay
+    cpx     #$0
+    bne     loop
+    ldx     #$3C
     stx     delay
 loop
-    ldaa    $02
-    cmpa    $0
-    beq     start
     ldaa    sound
     eora    #$80
     staa    sound
@@ -25,9 +25,9 @@ loop
     ldx     delay
 delay_loop
     dex
-    cpx     $0
+    cpx     #$0
     bne     delay_loop
-    ldaa    $FF
+    ldaa    #$0
     staa    P1DATA
     ldaa    $BFFF
     cmpa    #$FF
