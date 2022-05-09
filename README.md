@@ -48,7 +48,7 @@ POKE DL,128
  * beep.txt
  * beep.asm
 
-Sound is generated for as long as a key depressed. The assembly code sound function returns control to BASIC when the key is released.
+Sound is generated for as long as a key is pressed. The assembly code sound function returns control to BASIC when the key is released.
 
 A configurable delay controls the pitch. The quality of the sound is comparable to the output of the BASIC SOUND command.
 
