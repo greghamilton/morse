@@ -54,8 +54,8 @@ A configurable delay controls the pitch. The quality of the sound is comparable 
 
 ```
 10 DH=36399:DL=36400
-15 POKEDL,60
+15 POKEDL,60:REM SET THE PITCH
 20 A$=INKEY$:IFA$=""THEN10
 25 EXEC:REM SOUND A TONE FOR AS LONG AS A KEY IS PRESSED
-30 GOTO15
+30 GOTO20
 ```
